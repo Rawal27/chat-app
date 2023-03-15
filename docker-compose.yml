@@ -1,0 +1,9 @@
+version: "3"
+services:
+       rest-api:
+           container_name: chat-app
+           image: rawalk/chat-app
+           restart: always
+           build: .
+           ports:
+             - "3000:3000"
